@@ -16,7 +16,7 @@ server {
     root "{{ vhost.documentRoot|default('<DOCUMENT_ROOT>') }}";
     index "{{ vhost.documentIndex|default('<DOCUMENT_INDEX>') }}";
 
-    client_max_body_size 50m;
+    client_max_body_size 20m;
 
     include /opt/docker/etc/nginx/vhost.common.d/*.conf;
 }
@@ -36,7 +36,7 @@ server {
     root "{{ vhost.documentRoot|default('<DOCUMENT_ROOT>') }}";
     index "{{ vhost.documentIndex|default('<DOCUMENT_INDEX>') }}";
 
-    client_max_body_size 50m;
+    client_max_body_size 20m;
 
     include /opt/docker/etc/nginx/vhost.common.d/*.conf;
     include /opt/docker/etc/nginx/vhost.ssl.conf;

@@ -6,9 +6,9 @@ PROVISION:
 
   service:
     # set "enabled" or "disabled" to controll startup of services
-    - { service: "cron",    status: "enabled" }
-    - { service: "dnsmasq", status: "enabled" }
-    - { service: "postfix", status: "enabled" }
+    - { service: "cron",    status: "disabled" }
+    - { service: "dnsmasq", status: "disabled" }
+    - { service: "postfix", status: "disabled" }
 
 WEB:
   vhost:
