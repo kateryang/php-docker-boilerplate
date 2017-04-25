@@ -10,9 +10,9 @@
 # Webserver
 
 # General
-WEB_DOCUMENT_ROOT=/app/
+WEB_DOCUMENT_ROOT=/app/public/
 WEB_DOCUMENT_INDEX=index.php
-CLI_SCRIPT="php /app/index.php"
+CLI_SCRIPT="php /app/public/index.php"
 
 #######################################
 # SSH settings
